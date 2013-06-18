@@ -37,7 +37,7 @@ GZIP_SUPPORT = 1
 # To build using XZ Utils liblzma - install the library and uncomment
 # the XZ_SUPPORT line below.
 #
-#XZ_SUPPORT = 1
+XZ_SUPPORT = 1
 
 
 ############ Building LZO support ##############
@@ -48,7 +48,7 @@ GZIP_SUPPORT = 1
 # LZO_SUPPORT line below. If needed, uncomment and set LZO_DIR to the
 # installation prefix.
 #
-#LZO_SUPPORT = 1
+LZO_SUPPORT = 1
 #LZO_DIR = /usr/local
 
 ########### Building LZMA support #############
@@ -68,7 +68,7 @@ GZIP_SUPPORT = 1
 # work) - download and unpack it, uncomment and set LZMA_DIR to unpacked source,
 # and uncomment the LZMA_SUPPORT line below.
 #
-#LZMA_XZ_SUPPORT = 1
+LZMA_XZ_SUPPORT = 1
 #LZMA_SUPPORT = 1
 #LZMA_DIR = ../../../../LZMA/lzma465
 
@@ -105,7 +105,7 @@ XATTR_DEFAULT = 1
 ###############################################
 
 INCLUDEDIR = -I.
-INSTALL_DIR = /usr/local/bin
+INSTALL_DIR = $(DESTDIR)/usr/bin
 
 MKSQUASHFS_OBJS = mksquashfs.o read_fs.o sort.o swap.o pseudo.o compressor.o \
 	action.o progressbar.o read_file.o info.o restore.o \
